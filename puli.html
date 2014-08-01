@@ -1,0 +1,133 @@
+
+<html>
+	<head>
+		<title>Open Mikros Image</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<link type="text/css" rel="stylesheet" href="css/mikros.css">
+  		<link rel="icon" type="image/png" href="images/logo_mikros_s.gif" />
+  		<link href='http://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet' type='text/css'>
+  		<link href='http://fonts.googleapis.com/css?family=Actor' rel='stylesheet' type='text/css'>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  		<script type="text/javascript">
+  			function showAll() {
+  				$(".logoZone").toggleClass("logoZoneLoaded");
+  				$(".projZone").toggleClass("projZoneLoaded");
+  			}
+  		</script>
+		<script type="text/javascript">
+
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-33856597-1']);
+		  _gaq.push(['_trackPageview']);
+
+		  (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+
+		</script>
+	</head>
+
+	<body onload="showAll();">
+		<a href="https://github.com/mikrosimage/openrendermanagement">
+			<img style="position: absolute; top: 0; left: 0; border: 0; z-index: 1000;" src="images/github.png" alt="Fork me on GitHub">
+		</a>
+		<div id="centeredContent" class="centeredContent">
+		<nav>
+            <ul class="fancyNav">
+                <li id="home"><a href="index.html" class="homeIcon">Home</a></li>
+		<li id="openMVG"><a href="openmvg.html" title="openMVG">openMVG</a></li>
+                <li id="ColorTribe"><a href="colortribe.html">ColorTribe</a></li>
+                <li id="Puli" class="selected"><a href="puli.html">Puli</a></li>
+                <li id="Tuttle"><a href="tuttle.html">Tuttle</a></li>
+                <li id="Duke"><a href="duke.html">Duke</a></li>
+                <li id="discuss"><a href="mailto:opensource@mikrosimage.eu" style="color: #002A54;">Contact us</a></li>
+            </ul>
+        </nav>
+		<div id="projtitle" class="projtitle">
+			<h1>OPEN RENDER MANAGEMENT</h1>
+			<h2>aka Puli</h2>
+		</div>
+
+		<!-- logoZone -->
+		<div id="logoZone" class="logoZone">
+			<div id="projlogo" class="projlogo">
+				<img src="images/puli.png" class="logo">
+			</div>
+			<div id="projbar" class="projbar">
+				<img src="images/python.png" title="Python" style="padding-right:25px">
+				<img src="images/tornado.png" title="Tornado Web" style="padding-right:25px">
+				<img src="images/mysql.png" title="MySQL">
+			</div>
+
+			<div id="dlbutton" class="dlbutton">
+				<a href="https://github.com/mikrosimage/openrendermanagement/zipball/master" class="button">Download</a>
+			</div>
+
+			<div id="social" class="social">
+				<!-- AddThis Button BEGIN -->
+				<div class="addthis_toolbox addthis_default_style ">
+				<a class="addthis_button_google_plusone" style="width:65px" g:plusone:size="medium"></a>
+				<a class="addthis_button_facebook_like" style="width:75px" fb:like:layout="button_count"></a>
+				<a class="addthis_button_tweet" style="width:80px"></a>
+				</div>
+				<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=xa-5040b7bd2141f634"></script>
+				<!-- AddThis Button END -->
+			</div>
+
+		</div>
+		<!-- end logoZone -->
+
+		<!-- projZone -->
+		<div id="projZone" class="projZone">
+			<div id="projcontent" class="projcontent"><table>
+<tr>
+<td style="width: 50%">
+	<ul class="features">
+					<li>
+						<img src="images/puzzle.png">
+						<span style="color: #011640">Python API</span>
+						<p>Puli is an open-source render management solution entirely written in Python.
+							It provides a job submission API that can be used directly within <b>Maya®</b> (Autodesk) or <b>Nuke®</b> (The Foundry) - amongst others.</p>
+					</li>
+					<li>
+						<img src="images/Hammer.png">
+						<span style="color: #024059">Job Types</span>
+						<p>Several action scripts are also provided to enable jobs submission for <b>Maya®</b> (Autodesk), <b>Mental Ray®</b> (NVidia), <b>Nuke®</b> (The Foundry)
+							but you can easily write your own scripts to support your in-house rendering engine or any other 3rd party solution.</p>
+					</li>
+					<li>
+						<img src="images/graph.png">
+						<span style="color: #BE6C5C">Render Statistics</span>
+						<p>Jobs informations and metadatas can be stored in a database (and therefore providing persistence)
+							and can then be used to provide rendering statistics.</p>
+					</li>
+				</ul>
+</td>
+<td><ul class="features"><li>
+						<img src="images/Network.png">
+						<span style="color: #8C3037">Global Rendering</span>
+						<p>Puli is able to seamlessly manage rendering on both local and distant networks.<br>For example, you can mix your renderfarm between local render nodes and a 3rd party cloud solution.</p>
+					</li>
+					<li style="margin-bottom: 50px">
+						<img src="images/Top.png" style="margin-bottom: 90px">
+						<span style="color: #4C646B">More Noteworthy Features</span>
+						<p style="text-align:left; line-height: 20px">&bull; Priority management
+							<br>&bull; Jobs dependencies
+							<br>&bull; Rendering software license availability
+							<br>&bull; Minimum hardware requirements for a job (CPU, memory, …)
+							<br>&bull; Workstations and renderfarm management (render nodes pools)
+							<br>&bull; Local user denial for his workstation to be used as a render node</p>
+					</li>
+				</ul></td>
+</tr>
+</table>
+
+
+			</div>
+		</div>
+		<!-- end projZone -->
+	</div>
+	</body>
+</html>

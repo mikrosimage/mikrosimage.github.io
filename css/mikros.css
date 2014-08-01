@@ -1,0 +1,717 @@
+body, html {
+	margin: 0;
+	padding: 0;
+	font-family: 'Comfortaa', cursive;
+	font-size: 20px;
+	background: no-repeat url(../images/scratches.png) 0 0;
+	background-repeat: repeat;
+}
+
+@font-face {
+	font-family: 'RaphaelIcons';
+    src: url('raphaelicons-webfont.eot');
+    src: local('☺'), url('raphaelicons-webfont.woff') format('woff'), url('raphaelicons-webfont.ttf') format('truetype'), url('raphaelicons-webfont.svgwebfontKOf9F4sx') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.leftmain {
+	width: 60%;
+	float: left;
+	font-family: 'Lato';
+	font-size: 17px;
+	text-align: justify;
+	padding-top: 25px;
+	margin-left: 20px;
+	opacity: 0;
+	transition-property: opacity;
+	transition-duration: 1.0s;
+	transition-timing-function: ease-out;
+	transition-delay: 0;
+	-webkit-transition-property: opacity;
+	-webkit-transition-duration: 1.0s;
+	-webkit-transition-timing-function: ease-out;
+	-webkit-transition-delay: 0;
+	-moz-transition-property: opacity;
+	-moz-transition-duration: 1.0s;
+	-moz-transition-timing-function: ease-out;
+	-moz-transition-delay: 0;
+}
+
+.leftmainLoaded {
+	opacity: 1;
+}
+
+.rightmain {
+	padding-top: 25px;
+	margin-right: 15px;
+	float: right;
+	width: 35%;
+	opacity: 0;
+	transition-property: opacity;
+	transition-duration: 1.0s;
+	transition-timing-function: ease-out;
+	transition-delay: 1.5s;
+	-webkit-transition-property: opacity;
+	-webkit-transition-duration: 1.0s;
+	-webkit-transition-timing-function: ease-out;
+	-webkit-transition-delay: 1.5s;
+	-moz-transition-property: opacity;
+	-moz-transition-duration: 1.0s;
+	-moz-transition-timing-function: ease-out;
+	-moz-transition-delay: 1.5s;
+}
+
+.rightmainLoaded {
+	opacity: 1;
+}
+
+.homelogo {
+	display: block;
+	margin: auto;
+	width: 95px;
+	height: 95px;
+	margin-top: 10px;
+}
+
+ul.box {
+	position: relative;
+	z-index: 1; /* prevent shadows falling behind containers with backgrounds */
+	overflow: visible;
+	list-style: none;
+	padding: 0;
+	margin: auto;
+	width: 730px;
+}
+
+
+ul.box li {
+	position: relative;
+	float: left;
+	width: 120px;
+	height: 120px;
+	padding: 0;
+	border: 1px solid #efefef;
+	margin: 0 20px 20px 0;
+	background: #fff;
+	-webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.06) inset;
+	-moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.06) inset;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.06) inset;
+}
+
+
+ul.box li:before, ul.box li:after {
+	content: '';
+	z-index: -1;
+	position: absolute;
+	left: 10px;
+	bottom: 10px;
+	width: 70%;
+	max-width: 300px; /* avoid rotation causing ugly appearance at large container widths */
+	max-height: 100px;
+	height: 55%;
+	-webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8);
+	-moz-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8);
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8);
+	-webkit-transform: skew(-15deg) rotate(-6deg);
+	-moz-transform: skew(-15deg) rotate(-6deg);
+	-ms-transform: skew(-15deg) rotate(-6deg);
+	-o-transform: skew(-15deg) rotate(-6deg);
+	transform: skew(-15deg) rotate(-6deg);
+}
+
+
+ul.box li:after {
+	left: auto;
+	right: 10px;
+	-webkit-transform: skew(15deg) rotate(6deg);
+	-moz-transform: skew(15deg) rotate(6deg);
+	-ms-transform: skew(15deg) rotate(6deg);
+	-o-transform: skew(15deg) rotate(6deg);
+	transform: skew(15deg) rotate(6deg);
+}
+
+
+a[data-tooltip]:link, a[data-tooltip]:visited {
+	position: relative;
+	text-decoration: none;
+}
+
+a[data-tooltip]:before {
+	content: "";
+	position: absolute;
+	border-bottom: 20px solid #666;
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	visibility: hidden;
+	bottom: -145px;
+	left: 45px;
+	z-index: 1000;
+}
+
+a[data-tooltip]:after {
+	content: attr(data-tooltip);
+	position: absolute;
+	z-index: 1000;
+	color: white;
+	bottom: -65px;
+	left: 0;
+	background: #666;
+	padding: 5px 15px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	height: 20px;
+	white-space: nowrap;
+	visibility: hidden;
+}
+
+
+a[data-tooltip]:hover:before, a[data-tooltip]:hover:after {
+	visibility: visible;
+	z-index: 1000;
+	-moz-transition: visibility 0s linear .3s;
+    -webkit-transition: visibility 0s linear .3s;
+    -ms-transition: visibility 0s linear .3s;
+    -o-transition: visibility 0s linear .3s;
+    transition: visibility 0s linear .3s;
+}
+
+.ribbon-wrapper-blue {
+	width: 85px;
+	height: 88px;
+	overflow: hidden;
+	position: absolute;
+	top: -3px;
+	right: -3px;
+}
+
+.ribbon-blue {
+	font: bold 15px Sans-Serif;
+	color: #fff;
+	text-align: center;
+	letter-spacing:1px;
+	z-index:10;
+	text-shadow:1px -1px 3px rgba(0,0,0,0.5) ;
+	-webkit-transform: rotate(45deg);
+	-moz-transform:    rotate(45deg);
+	-ms-transform:     rotate(45deg);
+	-o-transform:      rotate(45deg);
+	position: relative;
+	padding: 7px 0;
+	left: -5px;
+	top: 15px;
+	width: 120px;
+	background: rgb(167,207,223);
+	background: -moz-linear-gradient(top, rgba(167,207,223,1) 0%, rgba(35,83,138,1) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(167,207,223,1)), color-stop(100%,rgba(35,83,138,1)));
+	background: -webkit-linear-gradient(top, rgba(167,207,223,1) 0%,rgba(35,83,138,1) 100%);
+	background: -o-linear-gradient(top, rgba(167,207,223,1) 0%,rgba(35,83,138,1) 100%);
+	background: -ms-linear-gradient(top, rgba(167,207,223,1) 0%,rgba(35,83,138,1) 100%);
+	background: linear-gradient(top, rgba(167,207,223,1) 0%,rgba(35,83,138,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a7cfdf', endColorstr='#23538a',GradientType=0 );
+	color: #fff;
+	-webkit-box-shadow: 0px 0px 3px rgba(0,0,0,0.3);
+	-moz-box-shadow:    0px 0px 3px rgba(0,0,0,0.3);
+	box-shadow:         0px 0px 3px rgba(0,0,0,0.3);
+}
+
+.ribbon-blue:before, .ribbon-blue:after {
+	content: "";
+	border-top:   3px solid #23538a;
+	border-left:  3px solid transparent;
+	border-right: 3px solid transparent;
+	position:absolute;
+	bottom: -3px;
+}
+.ribbon-blue:before {left: 0;}
+.ribbon-blue:after {right: 0;}
+
+.note {
+	font-size: 13px;
+}
+
+.testimonial {
+    margin: 0;
+    padding: 10px 50px;
+    position: relative;
+    font-family: Georgia, serif;
+    color: #666;
+    font-style: italic;
+    text-shadow: 0 1px 0 #ECFBFF;
+}
+
+.testimonial:before, .testimonial:after {
+    content: "\201C";
+    position: absolute;
+    font-size: 80px;
+    line-height: 1;
+    color: #999;
+    font-style: normal;
+}
+
+.testimonial:before {
+    top: 0;
+    left: 10px;
+}
+.testimonial:after {
+    content: "\201D";
+    right: 10px;
+    bottom: -0.5em;
+}
+.testimonial-author {
+    margin: 0 0 0 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #999;
+    text-align:left;
+    padding-bottom: 30px;
+}
+.testimonial-author span {
+    font-size: 12px;
+    color: #666;
+}
+
+.button {
+	width: 160px;
+	height: 30px;
+	line-height: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	text-decoration: none;
+	font-size: 12px;
+	font-weight: bold;
+	display: block;
+	text-align: center;
+	position: relative;
+
+	font-family: Arial, Helvetica, sans-serif;
+	color: #123d54;
+	background: -moz-linear-gradient(
+		top,
+		#afd9fa 0%,
+		#588fad);
+	background: -webkit-gradient(
+		linear, left top, left bottom,
+		from(#afd9fa),
+		to(#588fad));
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	border: 1px solid #003366;
+	-moz-box-shadow:
+		0 1px 3px rgba(000,000,000,0.5),
+		inset 0 0 1px rgba(255,255,255,1);
+	-webkit-box-shadow:
+		0 1px 3px rgba(000,000,000,0.5),
+		inset 0 0 1px rgba(255,255,255,1);
+	box-shadow:
+		0 1px 3px rgba(000,000,000,0.5),
+		inset 0 0 1px rgba(255,255,255,1);
+	}
+
+	/* WHILE HOVERED */
+.button:hover {
+	border: 1px solid #aaa;
+	-moz-box-shadow:
+		0 1px 3px rgba(250,250,250,0.5),
+		inset 0 0 1px rgba(255,255,255,1);
+	-webkit-box-shadow:
+		0 1px 3px rgba(250,250,250,0.5),
+		inset 0 0 1px rgba(255,255,255,1);
+	box-shadow:
+		0 1px 3px rgba(250,250,250,0.5),
+		inset 0 0 1px rgba(255,255,255,1);
+}
+
+	/* WHILE BEING CLICKED */
+.button:active {
+	-moz-box-shadow: 0 2px 6px black;
+	-webkit-box-shadow: 0 2px 6px black;
+	box-shadow: 0 2px 6px black;
+}
+
+.button:before {
+    font-family: 'RaphaelIcons';
+    font-weight: normal;
+    content: 'U';
+    font-size: 3.1em;
+    float: left;
+    margin-left: 5px;
+    margin-right: -10px;
+	text-shadow:0 1px 1px rgba(230,230,230,1.0);
+}
+
+.centeredContent
+{
+	position: relative;
+	width: 95%;
+	margin-left: auto;
+	margin-right: auto;
+	height: auto;
+}
+
+.logoZone
+{
+	position:relative;
+	height: 200px;
+	width: 24%;
+	margin-top: 100px;
+	margin-left: 1%;
+	margin-right: 1%;
+	float: left;
+	opacity: 0;
+	transition-property: opacity;
+	transition-duration: 1.0s;
+	transition-timing-function: ease-out;
+	transition-delay: 0;
+	-webkit-transition-property: opacity;
+	-webkit-transition-duration: 1.0s;
+	-webkit-transition-timing-function: ease-out;
+	-webkit-transition-delay: 0;
+	-moz-transition-property: opacity;
+	-moz-transition-duration: 1.0s;
+	-moz-transition-timing-function: ease-out;
+	-moz-transition-delay: 0;
+}
+
+.logoZoneLoaded {
+	opacity: 1;
+}
+
+.logo
+{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.projZone
+{
+	position:relative;
+	width:73%;
+	margin-top: 10px;
+	margin-right: 10px;
+	float:right;
+	opacity: 0;
+	transition-property: opacity;
+	transition-duration: 1.0s;
+	transition-timing-function: ease-out;
+	transition-delay: 0;
+	-webkit-transition-property: opacity;
+	-webkit-transition-duration: 1.0s;
+	-webkit-transition-timing-function: ease-out;
+	-webkit-transition-delay: 0;
+	-moz-transition-property: opacity;
+	-moz-transition-duration: 1.0s;
+	-moz-transition-timing-function: ease-out;
+	-moz-transition-delay: 0;
+}
+
+.projZoneLoaded {
+	opacity: 1;
+}
+
+.projBar
+{
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+	width: 190px;
+}
+
+.dlbutton
+{
+	margin-top: 40px;
+}
+
+.social
+{
+	width: 240px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+}
+
+.projTitle h1
+{
+	position:relative;
+	font-size:40px;
+	text-shadow:0 1px 1px white;
+	font-weight: normal;
+	color: #233138;
+	padding-top:20px;
+	margin-bottom: 0;
+	text-align: center;
+}
+
+.projTitle h2
+{
+	position:relative;
+	font-size:28px;
+	text-shadow:0 1px 1px white;
+	font-weight: normal;
+	color: #233138;
+	margin-top:10px;
+	text-align: center;
+}
+
+menu
+{
+	position:relative;
+	text-align: center;
+	margin-top:0;
+	padding-top:23px;
+	margin-right: 20px;
+}
+
+menu p, menu a
+{
+	font-weight:bold;
+	font-family: Arial;
+	text-transform: uppercase;
+	font-size:13px;
+	color:black;
+	text-shadow:0 1px 0 rgba(255,255,255,1.0);
+	text-decoration: none;
+	display:inline;
+}
+
+menu a:hover
+{
+	color:#3a72b0;
+}
+
+menu p
+{
+	margin-right:14px;
+}
+
+.linkActive
+{
+	color:#3a72b0;
+}
+
+ul.features li {
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 15px;
+	list-style-type: none;
+}
+
+ul.features img {
+	float: left;
+	margin-right: 15px;
+	margin-top: 25px;
+	padding-bottom: 35px;
+}
+
+ul.features li span {
+	font-weight: bold;
+	font-size: 16px;
+}
+
+ul.features li p {
+	font-family: 'Actor';
+	font-size: 14px;
+	text-align: justify;
+	padding-bottom: 20px;
+}
+
+/*----------------------------
+	CSS3 Animated Navigation
+-----------------------------*/
+
+
+.fancyNav{
+	/* Affects the UL element */
+	overflow: hidden;
+	display: block;
+	width: 860px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.fancyNav li{
+	/* Specifying a fallback color and we define CSS3 gradients for the major browsers: */
+
+	background-color: #f0f0f0;
+	background-image: -webkit-gradient(linear,left top, left bottom,from(#fefefe), color-stop(0.5,#f0f0f0), color-stop(0.51, #e6e6e6));
+	background-image: -moz-linear-gradient(#fefefe 0%, #f0f0f0 50%, #e6e6e6 51%);
+	background-image: -o-linear-gradient(#fefefe 0%, #f0f0f0 50%, #e6e6e6 51%);
+	background-image: -ms-linear-gradient(#fefefe 0%, #f0f0f0 50%, #e6e6e6 51%);
+	background-image: linear-gradient(#fefefe 0%, #f0f0f0 50%, #e6e6e6 51%);
+
+	border: 1px solid rgba(9, 9, 9, 0.2);
+
+	/* Adding a 1px inset highlight for a more polished efect: */
+
+	box-shadow: 1px -1px 0 rgba(255, 255, 255, 0.6) inset;
+	-moz-box-shadow: 1px -1px 0 rgba(255, 255, 255, 0.6) inset;
+	-webkit-box-shadow: 1px -1px 0 rgba(255, 255, 255, 0.6) inset;
+
+	position:relative;
+
+	float: left;
+	list-style: none;
+}
+
+.fancyNav li:after{
+
+	/* This creates a pseudo element inslide each LI */
+
+	content:'.';
+	text-indent:-9999px;
+	overflow:hidden;
+	position:absolute;
+	width:100%;
+	height:100%;
+	top:0;
+	left:0;
+	z-index:1;
+	opacity:0;
+
+	/* Gradients! */
+
+	background-image:-webkit-gradient(linear, left top, right top, from(rgba(168,168,168,0.5)),color-stop(0.5,rgba(168,168,168,0)), to(rgba(168,168,168,0.5)));
+	background-image:-moz-linear-gradient(left, rgba(168,168,168,0.5), rgba(168,168,168,0) 50%, rgba(168,168,168,0.5));
+	background-image:-o-linear-gradient(left, rgba(168,168,168,0.5), rgba(168,168,168,0) 50%, rgba(168,168,168,0.5));
+	background-image:-ms-linear-gradient(left, rgba(168,168,168,0.5), rgba(168,168,168,0) 50%, rgba(168,168,168,0.5));
+	background-image:linear-gradient(left, rgba(168,168,168,0.5), rgba(168,168,168,0) 50%, rgba(168,168,168,0.5));
+
+	/* Creating borders with box-shadow. Useful, as they don't affect the size of the element. */
+
+	box-shadow:-1px 0 0 #a3a3a3,-2px 0 0 #666,1px 0 0 #a3a3a3,2px 0 0 #666;
+	-moz-box-shadow:-1px 0 0 #a3a3a3,-2px 0 0 #666,1px 0 0 #a3a3a3,2px 0 0 #666;
+	-webkit-box-shadow:-1px 0 0 #a3a3a3,-2px 0 0 #666,1px 0 0 #a3a3a3,2px 0 0 #666;
+
+	/* This will create a smooth transition for the opacity property */
+
+	-moz-transition:0.25s all;
+	-webkit-transition:0.25s all;
+	-o-transition:0.25s all;
+	transition:0.25s all;
+}
+
+/* Treating the first LI and li:after elements separately */
+
+.fancyNav li:first-child{
+	border-radius: 4px 0 0 4px;
+}
+
+.fancyNav li:first-child:after,
+.fancyNav li.selected:first-child:after{
+	box-shadow:1px 0 0 #a3a3a3,2px 0 0 #666;
+	-moz-box-shadow:1px 0 0 #a3a3a3,2px 0 0 #666;
+	-webkit-box-shadow:1px 0 0 #a3a3a3,2px 0 0 #666;
+
+	border-radius:4px 0 0 4px;
+}
+
+.fancyNav li:last-child{
+	border-radius: 0 4px 4px 0;
+}
+
+/* Treating the last LI and li:after elements separately */
+
+.fancyNav li:last-child:after,
+.fancyNav li.selected:last-child:after{
+	box-shadow:-1px 0 0 #a3a3a3,-2px 0 0 #666;
+	-moz-box-shadow:-1px 0 0 #a3a3a3,-2px 0 0 #666;
+	-webkit-box-shadow:-1px 0 0 #a3a3a3,-2px 0 0 #666;
+
+	border-radius:0 4px 4px 0;
+}
+
+.fancyNav li:hover:after,
+.fancyNav li.selected:after,
+.fancyNav li:target:after{
+	/* This property triggers the CSS3 transition */
+	opacity:1;
+}
+
+.fancyNav li.selected:hover:after,
+.fancyNav li:target:hover:after{
+	opacity:1 !important;
+}
+
+/* Styling the anchor elements */
+
+.fancyNav li a{
+	color: #5d5d5d;
+	display: inline-block;
+	font-weight:bold;
+	font-family: Arial;
+	text-transform: uppercase;
+	font-size:13px;
+	padding: 5px 35px 7px;
+	position: relative;
+	text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.6);
+	z-index:2;
+	text-decoration:none !important;
+	white-space:nowrap;
+}
+
+.fancyNav a.homeIcon{
+	background:url('../images/home.png') no-repeat center center;
+	display: block;
+	overflow: hidden;
+	padding-left: 12px;
+	padding-right: 12px;
+	text-indent: -9999px;
+	width: 16px;
+}
+
+input, textarea {
+	padding: 8px;
+	border: solid 1px #E5E5E5;
+	font: normal 12px Verdana, Tahoma, sans-serif;
+	width: 200px;
+	background: #FFFFFF url('form_background.png') left top repeat-x;/*Mimic Background Property in Internet Explorer since IE 6,7,8 does not support CSS3*/
+	background: -webkit-gradient(linear, left top, left 25, from(#FFFFFF), color-stop(4%, #EEEEEE), to(#FFFFFF));
+	background: -moz-linear-gradient(top, #FFFFFF, #EEEEEE 1px, #FFFFFF 25px);
+	box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;/*0.1 actually means 10 %*/
+	-moz-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
+	-webkit-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
+	}
+
+textarea {
+	width: 400px;
+	max-width: 400px;
+	height: 150px;
+	line-height: 150%;
+	}
+
+input:hover, textarea:hover,
+input:focus, textarea:focus {
+-moz-box-shadow:0 0 8px lightblue;
+	-webkit-box-shadow:0 0 8px lightblue;
+	box-shadow:0 0 8px lightblue;
+}
+
+.form label {
+	margin-left: 12px;
+	color: #999999;
+	}
+
+.submit input {
+	width: auto;
+	padding: 10px 14px;
+	background: #617798;
+	font-size: 14px;
+	color: #FFFFFF;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	cursor:pointer;
+	}
+#form-div {
+-moz-border-radius:12px 12px 12px 12px;
+-webkit-border-radius: 12px 12px 12px 12px;
+background-color:#F5F5F5;
+padding:15px;
+width: 700px;
+margin-top: 40px;
+margin-left: auto;
+margin-right: auto;
+}
+
+ul{font-family: 'Actor'; font-size: 16px; text-align: justify; padding-top: 30px; padding-left: 35px; padding-right: 15px}

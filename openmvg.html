@@ -1,4 +1,3 @@
-
 <html>
     <head>
         <title>Open Mikros Image</title>
@@ -29,80 +28,81 @@
     </head>
 
     <body onload="showAll();">
-        <a href="https://github.com/openMVG/openMVG" target="_blank">
-            <img style="position: absolute; top: 0; left: 0; border: 0; z-index: 1000;" src="images/github.png" alt="Fork me on GitHub">
-        </a>
         <div id="centeredContent" class="centeredContent">
-        <nav>
-            <ul class="fancyNav">
-                <li id="home"><a href="index.html" class="homeIcon">Home</a></li>
-                <li id="ColorTribe"><a href="colortribe.html">ColorTribe</a></li>
-                <li id="Puli"><a href="puli.html">Puli</a></li>
-                <li id="Tuttle"><a href="tuttle.html">Tuttle</a></li>
-                <li id="Duke"><a href="duke.html">Duke</a></li>
-                <li id="openMVG" class="selected"><a href="openmvg.html" title="openMVG">openMVG</a></li>
-                <li id="ColorPipe-Tools"><a href="colorPipe.html">ColorPipe-Tools</a></li>
-                <li id="fileMetaChecker"><a href="fileMetaChecker.html" title="fileMetaChecker">FileMeta Checker</a></li>
-                <li id="discuss"><a href="mailto:opensource@mikrosimage.eu" style="color: #002A54;">Contact us</a></li>
-            </ul>
-        </nav>
+        <ul class="fancyNav"><!--
+        --><li id="home"><a href="index.html" class="nav_first">Home</a></li><!-- 
+        --><li id="ColorTribe"><a href="colortribe.html">ColorTribe</a></li><!-- 
+        --><li id="Puli"><a href="puli.html">Puli</a></li><!--
+        --><li id="Tuttle"><a href="tuttle.html">Tuttle</a></li><!--
+        --><li id="Duke"><a href="duke.html">Duke</a></li><!--
+        --><li id="openMVG"><a href="openmvg.html" class="selected" title="openMVG">openMVG</a></li><!--
+        --><li id="ColorPipe-Tools"><a href="colorPipe.html">ColorPipe-Tools</a></li><!--
+        --><li id="fileMetaChecker"><a href="fileMetaChecker.html" title="fileMetaChecker">FileMeta Checker</a></li><!--
+        --><li id="discuss"><a href="mailto:opensource@mikrosimage.eu" class="nav_last">Contact us</a></li>
+        </ul>
 
-        <div id="projtitle" class="projtitle">
-            <h1>openMVG</h1>
-            <h2>aka Open Multiple View Geometry</h2>
-        </div>
-
-        <!-- logoZone -->
-        <div id="logoZone" class="logoZone">
-            <div id="projlogo" class="projlogo">
-                <img src="images/openmvg.png" class="logo" alt="openMVG">
-            </div>
-            <div id="projbar" class="projbar">
-                <img src="images/cpp.png" title="C++" style="padding-left:40px">
+        <div class="projectContent">
+            <a href="https://github.com/openMVG/openMVG" target="_blank">
+                <img style="position: absolute; top: 0; left: 0; border: 0; z-index: 1000;" src="images/github.png" alt="Fork me on GitHub">
+            </a>
+            
+            <div id="projtitle" class="projtitle">
+                <h1>openMVG</h1>
+                <h2>aka Open Multiple View Geometry</h2>
             </div>
 
-            <div id="dlbutton" class="dlbutton">
-                <a href="https://github.com/openMVG/openMVG/archive/master.zip" class="button">Download</a>
-            </div>
-
-            <div id="social" class="social">
-                <!-- AddThis Button BEGIN -->
-                <div class="addthis_toolbox addthis_default_style ">
-                    <a class="addthis_button_google_plusone" style="width:65px" g:plusone:size="medium"></a>
-                    <a class="addthis_button_facebook_like" style="width:75px" fb:like:layout="button_count"></a>
-                    <a class="addthis_button_tweet" style="width:80px"></a>
+            <!-- logoZone -->
+            <div id="logoZone" class="logoZone">
+                <div id="projlogo" class="projlogo">
+                    <img src="images/openmvg.png" class="logo" alt="openMVG">
                 </div>
-                <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=xa-5040b7bd2141f634"></script>
-                <!-- AddThis Button END -->
+                <div id="projbar" class="projbar">
+                    <img src="images/cpp.png" title="C++" style="padding-left:40px">
+                </div>
+
+                <div id="dlbutton" class="dlbutton">
+                    <a href="https://github.com/openMVG/openMVG/archive/master.zip" class="button">Download</a>
+                </div>
+
+                <div id="social" class="social">
+                    <!-- AddThis Button BEGIN -->
+                    <div class="addthis_toolbox addthis_default_style ">
+                        <a class="addthis_button_google_plusone" style="width:65px" g:plusone:size="medium"></a>
+                        <a class="addthis_button_facebook_like" style="width:75px" fb:like:layout="button_count"></a>
+                        <a class="addthis_button_tweet" style="width:80px"></a>
+                    </div>
+                    <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=xa-5040b7bd2141f634"></script>
+                    <!-- AddThis Button END -->
+                </div>
+
             </div>
+            <!-- end logoZone -->
 
-        </div>
-        <!-- end logoZone -->
+            <!-- projZone -->
+            <div id="projZone" class="projZone">
+                <div id="projcontent" class="projcontent">
+                    <p style="font-family: 'Actor'; font-size: 16px; text-align: justify; padding-top: 30px; padding-left: 35px; padding-right: 15px">
+                        <strong>openMVG</strong>: "open Multiple View Geometry" is a library for computer-vision scientists and especially targeted to the Multiple View Geometry community. It is designed to provide an easy access to the classical problem solvers in Multiple View Geometry and solve them accurately.</br/>
 
-        <!-- projZone -->
-        <div id="projZone" class="projZone">
-            <div id="projcontent" class="projcontent">
-                <p style="font-family: 'Actor'; font-size: 16px; text-align: justify; padding-top: 30px; padding-left: 35px; padding-right: 15px">
-                    <strong>openMVG</strong>: "open Multiple View Geometry" is a library for computer-vision scientists and especially targeted to the Multiple View Geometry community. It is designed to provide an easy access to the classical problem solvers in Multiple View Geometry and solve them accurately.</br/>
+                        The openMVG credo is: "Keep it simple, keep it maintainable". OpenMVG targets readable code that is easy to use and modify by the community.</br/>
 
-                    The openMVG credo is: "Keep it simple, keep it maintainable". OpenMVG targets readable code that is easy to use and modify by the community.</br/>
-
-                    All the features and modules are unit tested. This test driven development ensures that the code works as it should and enables more consistent repeatability. Furthermore, it makes it easier for the user to understand and learn the given features.</br/>
-                </p>
-                <p style="font-family: 'Actor'; font-size: 16px; text-align: justify; padding-top: 30px; padding-left: 35px; padding-right: 15px">
-                    <strong>Core features</strong><br/>
-                    openMVG multiview module consists of a collection of:
-                    <ul style="padding:0 0 0 50px;">
-                        <li>solvers for 2 to n-view geometry constraints that arise in multiple view geometry.</li>
-                        <li>a generic framework that can embed these solvers for robust estimation.</li>
-                    </ul>
-                </p>
-                <p style="font-family: 'Actor'; font-size: 16px; text-align: justify; padding-left: 35px; padding-right: 15px">
-                    openMVG provides a complete Structure from Motion incremental chain.
-                </p>
+                        All the features and modules are unit tested. This test driven development ensures that the code works as it should and enables more consistent repeatability. Furthermore, it makes it easier for the user to understand and learn the given features.</br/>
+                    </p>
+                    <p style="font-family: 'Actor'; font-size: 16px; text-align: justify; padding-top: 30px; padding-left: 35px; padding-right: 15px">
+                        <strong>Core features</strong><br/>
+                        openMVG multiview module consists of a collection of:
+                        <ul style="padding:0 0 0 50px;">
+                            <li>solvers for 2 to n-view geometry constraints that arise in multiple view geometry.</li>
+                            <li>a generic framework that can embed these solvers for robust estimation.</li>
+                        </ul>
+                    </p>
+                    <p style="font-family: 'Actor'; font-size: 16px; text-align: justify; padding-left: 35px; padding-right: 15px">
+                        openMVG provides a complete Structure from Motion incremental chain.
+                    </p>
+                </div>
             </div>
+            <!-- end projZone -->
         </div>
-        <!-- end projZone -->
     </div>
     </body>
 </html>

@@ -27,57 +27,60 @@
     </head>
 
     <body onload="showAll();">
-        <a href="https://github.com/mikrosimage/ColorPipe-tools" target="_blank">
-            <img style="position: absolute; top: 0; left: 0; border: 0; z-index: 1000;" src="images/github.png" alt="Fork me on GitHub">
-        </a>
         <div id="centeredContent" class="centeredContent">
-        <nav>
-            <ul class="fancyNav">
-                <li id="home"><a href="index.html" class="homeIcon">Home</a></li>
-                <li id="ColorTribe"><a href="colortribe.html">ColorTribe</a></li>
-                <li id="Puli"><a href="puli.html">Puli</a></li>
-                <li id="Tuttle"><a href="tuttle.html">Tuttle</a></li>
-                <li id="Duke"><a href="duke.html">Duke</a></li>
-                <li id="openMVG"><a href="openmvg.html" title="openMVG">openMVG</a></li>
-                <li id="ColorPipe-Tools" class="selected"><a href="colorPipe.html">ColorPipe-Tools</a></li>
-                <li id="fileMetaChecker"><a href="fileMetaChecker.html" title="fileMetaChecker">FileMeta Checker</a></li>
-                <li id="discuss"><a href="mailto:opensource@mikrosimage.eu" style="color: #002A54;">Contact us</a></li>
-            </ul>
-        </nav>
-        <!-- logoZone -->
-        <div id="logoZone" class="logoZone">
-            <div id="projlogo" class="projlogo">
-                <img src="images/colorPipe1.png" class="logo">
+        <ul class="fancyNav"><!--
+        --><li id="home"><a href="index.html" class="nav_first">Home</a></li><!-- 
+        --><li id="ColorTribe"><a href="colortribe.html">ColorTribe</a></li><!-- 
+        --><li id="Puli"><a href="puli.html">Puli</a></li><!--
+        --><li id="Tuttle"><a href="tuttle.html">Tuttle</a></li><!--
+        --><li id="Duke"><a href="duke.html">Duke</a></li><!--
+        --><li id="openMVG"><a href="openmvg.html" title="openMVG">openMVG</a></li><!--
+        --><li id="ColorPipe-Tools"><a href="colorPipe.html" class="selected">ColorPipe-Tools</a></li><!--
+        --><li id="fileMetaChecker"><a href="fileMetaChecker.html" title="fileMetaChecker">FileMeta Checker</a></li><!--
+        --><li id="discuss"><a href="mailto:opensource@mikrosimage.eu" class="nav_last">Contact us</a></li>
+        </ul>
+        <div class="projectContent">
+            <a href="https://github.com/mikrosimage/ColorPipe-tools" target="_blank">
+                <img style="position: absolute; top: 0; left: 0; border: 0; z-index: 1000;" src="images/github.png" alt="Fork me on GitHub">
+            </a>
+            <div id="projtitle" class="projtitle">
+                <h1></h1>
             </div>
-            <div id="projbar" class="projbar" style="text-align:center;">
-                <img src="images/cpp.png" title="C++">
-            </div>
-
-            <div id="dlbutton" class="dlbutton">
-                <a href="https://github.com/mikrosimage/ColorPipe-tools/zipball/master" class="button">Download</a>
-            </div>
-
-            <div id="social" class="social">
-                <!-- AddThis Button BEGIN -->
-                <div class="addthis_toolbox addthis_default_style ">
-                    <a class="addthis_button_google_plusone" style="width:65px" g:plusone:size="medium"></a>
-                    <a class="addthis_button_facebook_like" style="width:75px" fb:like:layout="button_count"></a>
-                    <a class="addthis_button_tweet" style="width:80px"></a>
+            <!-- logoZone -->
+            <div id="logoZone" class="logoZone">
+                <div id="projlogo" class="projlogo">
+                    <img src="images/colorPipe1.png" class="logo">
                 </div>
-                <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=xa-5040b7bd2141f634"></script>
-                <!-- AddThis Button END -->
-            </div>
+                <div id="projbar" class="projbar" style="text-align:center;">
+                    <img src="images/cpp.png" title="C++">
+                </div>
 
-        </div>
-        <!-- end logoZone -->
+                <div id="dlbutton" class="dlbutton">
+                    <a href="https://github.com/mikrosimage/ColorPipe-tools/zipball/master" class="button">Download</a>
+                </div>
 
-        <!-- projZone -->
-        <div id="projZone" class="projZone">
-            <div id="projcontent" class="projcontent">
-                <iframe  id="colorPipeFrame" src="http://opensource.mikrosimage.eu/ColorPipe-tools/about/" width="100%" frameBorder=0, style="border:1px solid lightgray"></iframe>
+                <div id="social" class="social">
+                    <!-- AddThis Button BEGIN -->
+                    <div class="addthis_toolbox addthis_default_style ">
+                        <a class="addthis_button_google_plusone" style="width:65px" g:plusone:size="medium"></a>
+                        <a class="addthis_button_facebook_like" style="width:75px" fb:like:layout="button_count"></a>
+                        <a class="addthis_button_tweet" style="width:80px"></a>
+                    </div>
+                    <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=xa-5040b7bd2141f634"></script>
+                    <!-- AddThis Button END -->
+                </div>
+
             </div>
+            <!-- end logoZone -->
+
+            <!-- projZone -->
+            <div id="projZone" class="projZone">
+                <div id="projcontent" class="projcontent">
+                    <iframe  id="colorPipeFrame" src="http://opensource.mikrosimage.eu/ColorPipe-tools/about/" width="100%" frameBorder=0, style="border:1px solid lightgray"></iframe>
+                </div>
+            </div>
+            <!-- end projZone -->
         </div>
-        <!-- end projZone -->
     </div>
     <script>
         function resizeFrame(){

@@ -29,78 +29,77 @@
     </head>
 
     <body onload="showAll();">
-        <a href="https://github.com/mikrosimage/duke" target="_blank">
-            <img style="position: absolute; top: 0; left: 0; border: 0; z-index: 1000;" src="images/github.png" alt="Fork me on GitHub">
-        </a>
         <div id="centeredContent" class="centeredContent">
-            <nav>
-                <ul class="fancyNav">
-                    <li id="home"><a href="index.html" class="homeIcon">Home</a></li>
-                    <li id="ColorTribe"><a href="colortribe.html">ColorTribe</a></li>
-                    <li id="Puli"><a href="puli.html">Puli</a></li>
-                    <li id="Tuttle"><a href="tuttle.html">Tuttle</a></li>
-                    <li id="Duke" class="selected"><a href="duke.html">Duke</a></li>
-                    <li id="openMVG"><a href="openmvg.html" title="openMVG">openMVG</a></li>
-                    <li id="ColorPipe-Tools"><a href="colorPipe.html">ColorPipe-Tools</a></li>
-                    <li id="fileMetaChecker"><a href="fileMetaChecker.html" title="fileMetaChecker">FileMeta Checker</a></li>
-                    <li id="discuss"><a href="mailto:opensource@mikrosimage.eu" style="color: #002A54;">Contact us</a></li>
-                </ul>
-            </nav>
-
-            <div id="projtitle" class="projtitle">
-                <h1>OPEN SEQUENCE PLAYER</h1>
-                <h2>aka Duke</h2>
-            </div>
-
-            <!-- logoZone -->
-            <div id="logoZone" class="logoZone">
-                <div id="projlogo" class="projlogo">
-                    <img src="images/duke.png" class="logo">
-                </div>
-                <div id="projbar" class="projbar" style="text-align:center;">
-                    <img src="images/cpp.png" title="C++">
+            <ul class="fancyNav"><!--
+            --><li id="home"><a href="index.html" class="nav_first">Home</a></li><!-- 
+            --><li id="ColorTribe"><a href="colortribe.html">ColorTribe</a></li><!-- 
+            --><li id="Puli"><a href="puli.html">Puli</a></li><!--
+            --><li id="Tuttle"><a href="tuttle.html">Tuttle</a></li><!--
+            --><li id="Duke"><a href="duke.html" class="selected">Duke</a></li><!--
+            --><li id="openMVG"><a href="openmvg.html" title="openMVG">openMVG</a></li><!--
+            --><li id="ColorPipe-Tools"><a href="colorPipe.html">ColorPipe-Tools</a></li><!--
+            --><li id="fileMetaChecker"><a href="fileMetaChecker.html" title="fileMetaChecker">FileMeta Checker</a></li><!--
+            --><li id="discuss"><a href="mailto:opensource@mikrosimage.eu" class="nav_last">Contact us</a></li>
+            </ul>
+            <div class="projectContent">
+                <a href="https://github.com/mikrosimage/duke" target="_blank">
+                    <img style="position: absolute; top: 0; left: 0; border: 0; z-index: 1000;" src="images/github.png" alt="Fork me on GitHub">
+                </a>
+                <div id="projtitle" class="projtitle">
+                    <h1>OPEN SEQUENCE PLAYER</h1>
+                    <h2>aka Duke</h2>
                 </div>
 
-                <div id="dlbutton" class="dlbutton">
-                    <a href="https://github.com/mikrosimage/duke/zipball/master" class="button">Download</a>
-                </div>
-
-                <div id="social" class="social">
-                    <!-- AddThis Button BEGIN -->
-                    <div class="addthis_toolbox addthis_default_style ">
-                        <a class="addthis_button_google_plusone" style="width:65px" g:plusone:size="medium"></a>
-                        <a class="addthis_button_facebook_like" style="width:75px" fb:like:layout="button_count"></a>
-                        <a class="addthis_button_tweet" style="width:80px"></a>
+                <!-- logoZone -->
+                <div id="logoZone" class="logoZone">
+                    <div id="projlogo" class="projlogo">
+                        <img src="images/duke.png" class="logo">
                     </div>
-                    <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=xa-5040b7bd2141f634"></script>
-                    <!-- AddThis Button END -->
+                    <div id="projbar" class="projbar" style="text-align:center;">
+                        <img src="images/cpp.png" title="C++">
+                    </div>
+
+                    <div id="dlbutton" class="dlbutton">
+                        <a href="https://github.com/mikrosimage/duke/zipball/master" class="button">Download</a>
+                    </div>
+
+                    <div id="social" class="social">
+                        <!-- AddThis Button BEGIN -->
+                        <div class="addthis_toolbox addthis_default_style ">
+                            <a class="addthis_button_google_plusone" style="width:65px" g:plusone:size="medium"></a>
+                            <a class="addthis_button_facebook_like" style="width:75px" fb:like:layout="button_count"></a>
+                            <a class="addthis_button_tweet" style="width:80px"></a>
+                        </div>
+                        <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=xa-5040b7bd2141f634"></script>
+                        <!-- AddThis Button END -->
+                    </div>
+
                 </div>
+                <!-- end logoZone -->
 
-            </div>
-            <!-- end logoZone -->
+                <!-- projZone -->
+                <div id="projZone" class="projZone">
+                    <div id="projcontent" class="projcontent">
+                        <p style="font-family: 'Actor'; font-size: 16px; text-align: justify; padding-top: 30px; padding-left: 35px; padding-right: 15px">
+                            Duke is a basic <b>opensource high resolution image sequence player</b> dedicated to visual effects and post-production companies.<br><br>
 
-            <!-- projZone -->
-            <div id="projZone" class="projZone">
-                <div id="projcontent" class="projcontent">
-                    <p style="font-family: 'Actor'; font-size: 16px; text-align: justify; padding-top: 30px; padding-left: 35px; padding-right: 15px">
-                        Duke is a basic <b>opensource high resolution image sequence player</b> dedicated to visual effects and post-production companies.<br><br>
-
-                        Duke relies on a plug-in system for input formats (some are provided by <b>OpenImageIO</b>, others are dedicated plug-ins like JPEG or DPX), so it covers most of the image sequences needed by everyday VFX checking on <b>Linux®</b>, <b>Windows®</b> and <b>Mac OSX®</b> platforms.<br>Other components are based on generic libraries and proven technologies such as OpenGL.<br><br>
-                        Duke’s built-in lookahead file cache ensures stable playback for either direct from disk or RAM sources.<br>Duke’s modular engine enables color corrections and playlist management facilities as well as a timeline, or forthcoming features like 3D stereo, split screen, &hellip;<br/><br/>
-                        We aim at 
-                        <ul style="font-family: 'Actor'; font-size: 16px; text-align: justify; padding-top: 3px; margin-left: 35px;">
-                            <li>support for Look Up Tables</li>
-                            <li>split view to compare tracks</li>
-                            <li>basic color grading</li>
-                            <li>movie playback</li>
-                            <li>recording to file sequences or movies</li>
-                            <li>sound support</li>
-                            <li>3D support</li>
-                        </ul>
-                    </p>
+                            Duke relies on a plug-in system for input formats (some are provided by <b>OpenImageIO</b>, others are dedicated plug-ins like JPEG or DPX), so it covers most of the image sequences needed by everyday VFX checking on <b>Linux®</b>, <b>Windows®</b> and <b>Mac OSX®</b> platforms.<br>Other components are based on generic libraries and proven technologies such as OpenGL.<br><br>
+                            Duke’s built-in lookahead file cache ensures stable playback for either direct from disk or RAM sources.<br>Duke’s modular engine enables color corrections and playlist management facilities as well as a timeline, or forthcoming features like 3D stereo, split screen, &hellip;<br/><br/>
+                            We aim at 
+                            <ul style="font-family: 'Actor'; font-size: 16px; text-align: justify; padding-top: 3px; margin-left: 35px;">
+                                <li>support for Look Up Tables</li>
+                                <li>split view to compare tracks</li>
+                                <li>basic color grading</li>
+                                <li>movie playback</li>
+                                <li>recording to file sequences or movies</li>
+                                <li>sound support</li>
+                                <li>3D support</li>
+                            </ul>
+                        </p>
+                    </div>
                 </div>
+                <!-- end projZone -->
             </div>
-            <!-- end projZone -->
         </div>
     </body>
 </html>

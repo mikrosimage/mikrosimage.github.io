@@ -29,86 +29,86 @@
     </head>
 
     <body onload="showAll();">
-        <a href="https://github.com/mikrosimage/FileMetaChecker" target="_blank">
-            <img style="position: absolute; top: 0; left: 0; border: 0; z-index: 1000;" src="images/github.png" alt="Fork me on GitHub">
-        </a>
         <div id="centeredContent" class="centeredContent">
-        <nav>
-          <ul class="fancyNav">
-              <li id="home"><a href="index.html" class="homeIcon">Home</a></li>
-              <li id="ColorTribe"><a href="colortribe.html">ColorTribe</a></li>
-              <li id="Puli"><a href="puli.html">Puli</a></li>
-              <li id="Tuttle"><a href="tuttle.html">Tuttle</a></li>
-              <li id="Duke"><a href="duke.html">Duke</a></li>
-              <li id="openMVG"><a href="openmvg.html" title="openMVG">openMVG</a></li>
-              <li id="ColorPipe-Tools"><a href="colorPipe.html">ColorPipe-Tools</a></li>
-              <li id="fileMetaChecker" class="selected"><a href="fileMetaChecker.html" title="fileMetaChecker">FileMeta Checker</a></li>
-              <li id="discuss"><a href="mailto:opensource@mikrosimage.eu" style="color: #002A54;">Contact us</a></li>
-          </ul>
-        </nav>
+        <ul class="fancyNav"><!--
+        --><li id="home"><a href="index.html" class="nav_first">Home</a></li><!-- 
+        --><li id="ColorTribe"><a href="colortribe.html">ColorTribe</a></li><!-- 
+        --><li id="Puli"><a href="puli.html">Puli</a></li><!--
+        --><li id="Tuttle"><a href="tuttle.html">Tuttle</a></li><!--
+        --><li id="Duke"><a href="duke.html">Duke</a></li><!--
+        --><li id="openMVG"><a href="openmvg.html" title="openMVG">openMVG</a></li><!--
+        --><li id="ColorPipe-Tools"><a href="colorPipe.html">ColorPipe-Tools</a></li><!--
+        --><li id="fileMetaChecker"><a href="fileMetaChecker.html" class="selected" title="fileMetaChecker">FileMeta Checker</a></li><!--
+        --><li id="discuss"><a href="mailto:opensource@mikrosimage.eu" class="nav_last">Contact us</a></li>
+        </ul>
 
-        <div id="projtitle" class="projtitle">
-            <h1>FILE META CHECKER</h1>
-        </div>
-
-        <!-- logoZone -->
-        <div id="logoZone" class="logoZone">
-            <div id="projlogo" class="projlogo">
-                <img src="images/filemetachecker.png" class="logo">
-            </div>
-            <div id="projbar" class="projbar">
-                <img src="images/python.png" title="Python" style="padding-right:25px">
-                <img src="images/cpp.png" title="C++" style="padding-right:25px">
+        <div class="projectContent">
+            <a href="https://github.com/mikrosimage/FileMetaChecker" target="_blank">
+                <img style="position: absolute; top: 0; left: 0; border: 0; z-index: 1000;" src="images/github.png" alt="Fork me on GitHub">
+            </a>
+            <div id="projtitle" class="projtitle">
+                <h1>FILE META CHECKER</h1>
             </div>
 
-            <div id="dlbutton" class="dlbutton">
-                <a href="https://github.com/mikrosimage/FileMetaChecker/archive/master.zip" class="button">Download</a>
-            </div>
-
-            <div id="social" class="social">
-                <!-- AddThis Button BEGIN -->
-                <!--<div class="addthis_toolbox addthis_default_style ">
-                <a class="addthis_button_google_plusone" style="width:65px" g:plusone:size="medium"></a>
-                <a class="addthis_button_facebook_like" style="width:75px" fb:like:layout="button_count"></a>
-                <a class="addthis_button_tweet" style="width:80px"></a>
+            <!-- logoZone -->
+            <div id="logoZone" class="logoZone">
+                <div id="projlogo" class="projlogo">
+                    <img src="images/filemetachecker.png" class="logo">
                 </div>
-                <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=xa-5040b7bd2141f634"></script>-->
-                <!-- AddThis Button END -->
-            </div>
+                <div id="projbar" class="projbar">
+                    <img src="images/python.png" title="Python" style="padding-right:25px">
+                    <img src="images/cpp.png" title="C++" style="padding-right:25px">
+                </div>
 
-        </div>
-        <!-- end logoZone -->
+                <div id="dlbutton" class="dlbutton">
+                    <a href="https://github.com/mikrosimage/FileMetaChecker/archive/master.zip" class="button">Download</a>
+                </div>
 
-        <!-- projZone -->
-        <div id="projZone" class="projZone">
-            <div id="projcontent" class="projcontent">
-                <ul class="features">
-                    <li>
-                        <p>File Meta Checker is a tool to <b>extract metadata from various files</b> as images, video, sound etc.
-It is based on a libraryless extractor, the file structure is only described by a <b>human readable specification</b>.</p>
-                    </li>
-                    <li>
-                        <span style="color: #024059">Quality Control</span>
-                        <p>The Quality Control process on media files can be disociated into 4 parts:<br/>
-                            &bull; the <b>absolute level</b> for metadata extraction and validation<br/>
-                            &bull; the <b>objective level</b> to measure signal parameters (e.g. audio loudness, image PSNR, etc.) <br/>
-                            &bull; the <b>subjective level</b> to detect some perceptual inconsistencies.<br/>
-                            &bull; the <b>cross check</b> to validate the coherence between the 3 previous levels (absolute, objective and subjective).<br/>
-                        </p>
-                    </li>
-                    <li>
-                        <span style="color: #024059">A metadata extractor</span>
-                        <p>FileMetaChecker is focused on the absolute level, providing a tool to extract metadata from media files.<br/>
-                        The main attractive feature of this project is its architecture, allowing to process metadata extraction from medias files without media libraries dependency. FileMetaChecker is a generic engine parsing file descriptions (or specifications) to extract data from a specified file. A report on the metadata and the structure of the file is generated from this extraction.</p>
-                    </li>
-                    <li>
-                        <span style="color: #024059">Genericity</span>
-                        <p>Although FileMetaChecker was initially oriented for media analysis, the genericity of the engine allows to process every kind of file formats.</p>
-                    </li>
-                </ul>
+                <div id="social" class="social">
+                    <!-- AddThis Button BEGIN -->
+                    <!--<div class="addthis_toolbox addthis_default_style ">
+                    <a class="addthis_button_google_plusone" style="width:65px" g:plusone:size="medium"></a>
+                    <a class="addthis_button_facebook_like" style="width:75px" fb:like:layout="button_count"></a>
+                    <a class="addthis_button_tweet" style="width:80px"></a>
+                    </div>
+                    <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=xa-5040b7bd2141f634"></script>-->
+                    <!-- AddThis Button END -->
+                </div>
+
             </div>
+            <!-- end logoZone -->
+
+            <!-- projZone -->
+            <div id="projZone" class="projZone">
+                <div id="projcontent" class="projcontent">
+                    <ul class="features">
+                        <li>
+                            <p>File Meta Checker is a tool to <b>extract metadata from various files</b> as images, video, sound etc.
+    It is based on a libraryless extractor, the file structure is only described by a <b>human readable specification</b>.</p>
+                        </li>
+                        <li>
+                            <span style="color: #024059">Quality Control</span>
+                            <p>The Quality Control process on media files can be disociated into 4 parts:<br/>
+                                &bull; the <b>absolute level</b> for metadata extraction and validation<br/>
+                                &bull; the <b>objective level</b> to measure signal parameters (e.g. audio loudness, image PSNR, etc.) <br/>
+                                &bull; the <b>subjective level</b> to detect some perceptual inconsistencies.<br/>
+                                &bull; the <b>cross check</b> to validate the coherence between the 3 previous levels (absolute, objective and subjective).<br/>
+                            </p>
+                        </li>
+                        <li>
+                            <span style="color: #024059">A metadata extractor</span>
+                            <p>FileMetaChecker is focused on the absolute level, providing a tool to extract metadata from media files.<br/>
+                            The main attractive feature of this project is its architecture, allowing to process metadata extraction from medias files without media libraries dependency. FileMetaChecker is a generic engine parsing file descriptions (or specifications) to extract data from a specified file. A report on the metadata and the structure of the file is generated from this extraction.</p>
+                        </li>
+                        <li>
+                            <span style="color: #024059">Genericity</span>
+                            <p>Although FileMetaChecker was initially oriented for media analysis, the genericity of the engine allows to process every kind of file formats.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- end projZone -->
         </div>
-        <!-- end projZone -->
     </div>
     </body>
 </html>

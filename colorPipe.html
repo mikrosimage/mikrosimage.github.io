@@ -1,4 +1,3 @@
-
 <html>
     <head>
         <title>Open Mikros Image</title>
@@ -15,64 +14,55 @@
             }
         </script>
         <script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-33856597-1']);
+            _gaq.push(['_trackPageview']);
 
-          var _gaq = _gaq || [];
-          _gaq.push(['_setAccount', 'UA-33856597-1']);
-          _gaq.push(['_trackPageview']);
-
-          (function() {
+            (function() {
             var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
             ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
             var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-          })();
-
+            })();
         </script>
-
     </head>
 
     <body onload="showAll();">
-        <a href="https://github.com/mikrosimage/OpenDisplayCalib">
+        <a href="https://github.com/mikrosimage/ColorPipe-tools" target="_blank">
             <img style="position: absolute; top: 0; left: 0; border: 0; z-index: 1000;" src="images/github.png" alt="Fork me on GitHub">
         </a>
         <div id="centeredContent" class="centeredContent">
         <nav>
             <ul class="fancyNav">
                 <li id="home"><a href="index.html" class="homeIcon">Home</a></li>
-		<li id="openMVG"><a href="openmvg.html" title="openMVG">openMVG</a></li>
-                <li id="ColorTribe" class="selected"><a href="color.html">ColorTribe</a></li>
+                <li id="ColorTribe"><a href="colortribe.html">ColorTribe</a></li>
                 <li id="Puli"><a href="puli.html">Puli</a></li>
                 <li id="Tuttle"><a href="tuttle.html">Tuttle</a></li>
                 <li id="Duke"><a href="duke.html">Duke</a></li>
+                <li id="openMVG"><a href="openmvg.html" title="openMVG">openMVG</a></li>
+                <li id="ColorPipe-Tools" class="selected"><a href="colorPipe.html">ColorPipe-Tools</a></li>
+                <li id="fileMetaChecker"><a href="fileMetaChecker.html" title="fileMetaChecker">FileMeta Checker</a></li>
                 <li id="discuss"><a href="mailto:opensource@mikrosimage.eu" style="color: #002A54;">Contact us</a></li>
             </ul>
         </nav>
-
-        <div id="projtitle" class="projtitle">
-            <h1>OPEN DISPLAY CALIB</h1>
-            <h2>aka ColorTribe</h2>
-        </div>
-
         <!-- logoZone -->
         <div id="logoZone" class="logoZone">
             <div id="projlogo" class="projlogo">
-                <img src="images/colorchief.png" class="logo">
+                <img src="images/colorPipe1.png" class="logo">
             </div>
-            <div id="projbar" class="projbar">
-                <img src="images/cpp.png" title="C++" style="padding-right:25px">
-                <img src="images/qt.png" title="Qt" style="padding-right:25px">
-                <img src="images/java.png" title="Java">
+            <div id="projbar" class="projbar" style="text-align:center;">
+                <img src="images/cpp.png" title="C++">
             </div>
 
             <div id="dlbutton" class="dlbutton">
-                <a href="https://github.com/mikrosimage/OpenDisplayCalib/zipball/master" class="button">Download</a>
+                <a href="https://github.com/mikrosimage/ColorPipe-tools/zipball/master" class="button">Download</a>
             </div>
 
             <div id="social" class="social">
                 <!-- AddThis Button BEGIN -->
                 <div class="addthis_toolbox addthis_default_style ">
-                <a class="addthis_button_google_plusone" style="width:65px" g:plusone:size="medium"></a>
-                <a class="addthis_button_facebook_like" style="width:75px" fb:like:layout="button_count"></a>
-                <a class="addthis_button_tweet" style="width:80px"></a>
+                    <a class="addthis_button_google_plusone" style="width:65px" g:plusone:size="medium"></a>
+                    <a class="addthis_button_facebook_like" style="width:75px" fb:like:layout="button_count"></a>
+                    <a class="addthis_button_tweet" style="width:80px"></a>
                 </div>
                 <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=xa-5040b7bd2141f634"></script>
                 <!-- AddThis Button END -->
@@ -84,19 +74,21 @@
         <!-- projZone -->
         <div id="projZone" class="projZone">
             <div id="projcontent" class="projcontent">
-                <p style="font-family: 'Actor'; font-size: 16px; text-align: justify; padding-top: 30px; padding-left: 35px; padding-right: 15px">
-                    ColorTribe is an <b>opensource cross-platform color measurement and calibration software suite</b> for display devices.<br>
-<br>The suite is composed of three tools :
-<br>- <b>ColorHealer</b> : a calibration and measurement application<br>
-- <b>ColorKeeper</b> : a color correction loader with helpful tools as screen detection,  warning and email when correction is obsolete, gamma slider, printer lights, custom 2D LUTs loader (custom LUT is applied over the correction LUT), etc...<br>
-- <b>ColorChief</b> : a calib request management web app. For now, only a very simple mail feature has been implemented to allow calibrators to know when a station is un-calibrated.<br>
-<br>ColorTribe enables post-production facilities to maintain a coherent fleet of displays, whatever the platforms or the devices are.
-                </p>
-                <img src="images/Colortribe-schema.png" style="width: 700px; margin-left: auto; margin-right: auto; display: block">
-
+                <iframe  id="colorPipeFrame" src="http://opensource.mikrosimage.eu/ColorPipe-tools/about/" width="100%" frameBorder=0, style="border:1px solid lightgray"></iframe>
             </div>
         </div>
         <!-- end projZone -->
     </div>
+    <script>
+        function resizeFrame(){
+            var content = $("#projcontent")[0];
+            var colorPipeFrame = $("#colorPipeFrame")[0];
+            var fancyNav = $(".fancyNav")[0];
+            colorPipeFrame.height = $( window ).height() - fancyNav.offsetHeight - 50;
+        }
+
+        $( window ).resize(resizeFrame); 
+        resizeFrame();
+    </script>
     </body>
 </html>

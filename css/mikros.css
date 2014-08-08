@@ -81,7 +81,7 @@ ul.box {
 	list-style: none;
 	padding: 0;
 	margin: auto;
-	width: 730px;
+	width: 600px;
 }
 
 
@@ -526,7 +526,7 @@ ul.features li p {
 	/* Affects the UL element */
 	overflow: hidden;
 	display: block;
-	width: 860px;
+	width: 1300px;
 	margin-left: auto;
 	margin-right: auto;
 }

@@ -3,110 +3,114 @@
 	<head>
 		<title>Open Source by Mikros Image</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-     <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 		<link type="text/css" rel="stylesheet" href="css/mikros.css">
-  		<link rel="icon" type="image/png" href="images/logo_mikros_s.gif" />
-  		<link href='http://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet' type='text/css'>
-  		<link href='http://fonts.googleapis.com/css?family=Actor' rel='stylesheet' type='text/css'>
-  		<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
-        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-        <script type="text/javascript">
-            function showAll() {
-                $(".leftmain").toggleClass("leftmainLoaded");
-                $(".rightmain").toggleClass("rightmainLoaded");
-            }
-        </script>
-        <script type="text/javascript">
+		<link rel="icon" type="image/png" href="images/logo_mikros_s.gif" />
+		<link href='http://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Actor' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      function showAll() {
+          $(".leftmain").toggleClass("leftmainLoaded");
+          $(".rightmain").toggleClass("rightmainLoaded");
+      }
+    </script>
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-33856597-1']);
+      _gaq.push(['_trackPageview']);
 
-          var _gaq = _gaq || [];
-          _gaq.push(['_setAccount', 'UA-33856597-1']);
-          _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
 
-          (function() {
-            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-          })();
-
-        </script>
+    </script>
 
 	</head>
 
 	<body onload="showAll();">
 		<div id="centeredContent" class="centeredContent">
-        <nav>
-            <ul class="fancyNav">
-                <li id="home" class="selected"><a href="index.html" class="homeIcon">Home</a></li>
-		<li id="openMVG"><a href="openmvg.html" title="openMVG">openMVG</a></li>
-                <li id="ColorTribe"><a href="colortribe.html">ColorTribe</a></li>
-                <li id="Puli"><a href="puli.html">Puli</a></li>
-                <li id="Tuttle"><a href="tuttle.html">Tuttle</a></li>
-                <li id="Duke"><a href="duke.html">Duke</a></li>
-                <li id="ColorPipe-Tools"><a href="http://opensource.mikrosimage.eu/ColorPipe-tools/about/">ColorPipe-Tools</a></li>
-                <li id="discuss"><a href="mailto:opensource@mikrosimage.eu" style="color: #002A54;">Contact us</a></li>
-            </ul>
-        </nav>
+      <nav>
+          <ul class="fancyNav">
+              <li id="home" class="selected"><a href="index.html" class="homeIcon">Home</a></li>
+              <li id="ColorTribe"><a href="colortribe.html">ColorTribe</a></li>
+              <li id="Puli"><a href="puli.html">Puli</a></li>
+              <li id="Tuttle"><a href="tuttle.html">Tuttle</a></li>
+              <li id="Duke"><a href="duke.html">Duke</a></li>
+              <li id="openMVG"><a href="openmvg.html" title="openMVG">openMVG</a></li>
+              <li id="ColorPipe-Tools"><a href="colorPipe.html">ColorPipe-Tools</a></li>
+              <li id="fileMetaChecker"><a href="fileMetaChecker.html" title="fileMetaChecker">FileMeta Checker</a></li>
+              <li id="discuss"><a href="mailto:opensource@mikrosimage.eu" style="color: #002A54;">Contact us</a></li>
+          </ul>
+      </nav>
 
-		<div class="leftmain">
-			<b>Mikros Image</b> is proud to announce the addition of one new project in the VFX open source community!<br><br>
-			<ul class="box">
-				<li><div class="ribbon-wrapper-blue"><div class="ribbon-blue">NEW</div></div><a href="openmvg.html" data-tooltip="Open Multiple View Geometry aka openMVG"><img src="images/openmvg.png" class="homelogo"></a></li>
-				<li><a href="colortribe.html" data-tooltip="OpenDisplayCalib aka ColorTribe"><img src="images/colortribe.png" class="homelogo"></a></li>
-				<li><a href="puli.html" data-tooltip="OpenRenderManagement aka Puli"><img src="images/puli.png" class="homelogo"></a></li>
-				<li><a href="tuttle.html" data-tooltip="OpenBatchIO aka TuttleOFX"><img src="images/tuttle.png" class="homelogo"></a></li>
-				<li><a href="duke.html" data-tooltip="OpenSequencePlayer aka Duke"><img src="images/duke.png" class="homelogo"></a></li>
-				<li><div class="ribbon-wrapper-blue"><div class="ribbon-blue">NEW</div></div><a href="http://opensource.mikrosimage.eu/ColorPipe-tools/about/" data-tooltip="ColorPipe Tools"><img src="images/colorPipe1.png" class="homelogo"></a></li>
-			</ul>
-			<br><p style="clear:both">
-All these projects are the result of collaborative work with academic and industrial partners<sup>1</sup>.<br><br>
-<strong>HD3D</strong> projects have been initially sustained by the financial and organization supports of national and local authorities<sup>2</sup>.<br/>
- These projects have also been labellised by the business cluster <a href="http://www.capdigital.com/" target="_blank" title="Cap Digital">Cap Digital</a>.<br>
-<br>
-<span class="note">
-<sup>1</sup> <strong>openMVG project</strong> : LIGM-Imagine laboratory - ENPC .
-<strong>HD3D projects </strong>: Arkamys, Attitude Studio, 2 Minutes, CST, Duboi, Duran, Eclair Laboratoires, EESA, ENS Louis-Lumiere, France Telecom, HD3D SAS, Institut Telecom - Artemis, LIMSI-CNRS, LTC, Mac Guff Ligne, MSH Paris-Nord CICM, Noelios Technologies, Paris 13 L2Ti, Paris 8  INREV-ATI, TeamTO.<br>
-<br>
-<sup>2</sup> the French business cluster for digital content and services “Cap Digital”; the “Direction Générale de la Compétitivité, de l'Industrie et des Services” of the French Ministry of Finance and Industry; the “DRIRE”; the regional council of Île-de-France,  the regional council of Paris; the regional council of Hauts-de-Seine; the regional council of  Seine-Saint-Denis; the regional council of Val d’Oise.</span></p>
-            <div id="social" class="social" style="width: 350px; opacity: 0.7">
-                <!-- AddThis Button BEGIN -->
-                <div class="addthis_toolbox addthis_default_style ">
-                <a class="addthis_button_google_plusone" style="width:65px" g:plusone:size="medium"></a>
-                <a class="addthis_button_facebook_like" style="width:75px" fb:like:layout="button_count"></a>
-                <a class="addthis_button_tweet" style="width:80px"></a>
-                <a class="addthis_counter addthis_pill_style"></a>
-                </div>
-                <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=xa-5040b7bd2141f634"></script>
-                <!-- AddThis Button END -->
+  		<div class="leftmain">
+  			<b>Mikros Image</b> is proud to announce the addition of one new project in the VFX open source community!<br><br>
+  			<ul class="box">
+  				<li><a href="colortribe.html" data-tooltip="OpenDisplayCalib aka ColorTribe"><img src="images/colortribe.png" class="homelogo"></a></li>
+  				<li><a href="puli.html" data-tooltip="OpenRenderManagement aka Puli"><img src="images/puli.png" class="homelogo"></a></li>
+  				<li><a href="tuttle.html" data-tooltip="OpenBatchIO aka TuttleOFX"><img src="images/tuttle.png" class="homelogo"></a></li>
+  				<li><a href="duke.html" data-tooltip="OpenSequencePlayer aka Duke"><img src="images/duke.png" class="homelogo"></a></li>
+          <li><a href="openmvg.html" data-tooltip="Open Multiple View Geometry aka openMVG"><img src="images/openmvg.png" class="homelogo"></a></li>
+  				<li><div class="ribbon-wrapper-blue"><div class="ribbon-blue">NEW</div></div><a href="http://opensource.mikrosimage.eu/ColorPipe-tools/about/" data-tooltip="ColorPipe Tools"><img src="images/colorPipe1.png" class="homelogo"></a></li>
+          <li><div class="ribbon-wrapper-blue"><div class="ribbon-blue">NEW</div></div><a href="fileMetaChecker.html" data-tooltip="FileMeta Checker"><img src="images/filemetachecker.png" class="homelogo"></a></li>
+  			</ul>
+  			<br>
+        <p style="clear:both">
+          All these projects are the result of collaborative work with academic and industrial partners<sup>1</sup>.<br><br>
+          <strong>HD3D</strong> projects have been initially sustained by the financial and organization supports of national and local authorities<sup>2</sup>.<br/>
+           These projects have also been labellised by the business cluster <a href="http://www.capdigital.com/" target="_blank" title="Cap Digital">Cap Digital</a>.<br>
+          <br>
+          <span class="note">
+          <sup>1</sup> <strong>openMVG project</strong> : LIGM-Imagine laboratory - ENPC .
+          <strong>HD3D projects </strong>: Arkamys, Attitude Studio, 2 Minutes, CST, Duboi, Duran, Eclair Laboratoires, EESA, ENS Louis-Lumiere, France Telecom, HD3D SAS, Institut Telecom - Artemis, LIMSI-CNRS, LTC, Mac Guff Ligne, MSH Paris-Nord CICM, Noelios Technologies, Paris 13 L2Ti, Paris 8  INREV-ATI, TeamTO.<br>
+          <br>
+          <sup>2</sup> the French business cluster for digital content and services “Cap Digital”; the “Direction Générale de la Compétitivité, de l'Industrie et des Services” of the French Ministry of Finance and Industry; the “DRIRE”; the regional council of Île-de-France,  the regional council of Paris; the regional council of Hauts-de-Seine; the regional council of  Seine-Saint-Denis; the regional council of Val d’Oise.</span>
+        </p>
+        <div id="social" class="social" style="width: 350px; opacity: 0.7">
+            <!-- AddThis Button BEGIN -->
+            <div class="addthis_toolbox addthis_default_style ">
+              <a class="addthis_button_google_plusone" style="width:65px" g:plusone:size="medium"></a>
+              <a class="addthis_button_facebook_like" style="width:75px" fb:like:layout="button_count"></a>
+              <a class="addthis_button_tweet" style="width:80px"></a>
+              <a class="addthis_counter addthis_pill_style"></a>
             </div>
+            <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=xa-5040b7bd2141f634">
+            </script>
+            <!-- AddThis Button END -->
+        </div>
+  		</div>
+
+  		<div class="rightmain">
+  			<blockquote class="testimonial">
+    			<p>We’d like to sustain the efforts of standardization between studios to improve interoperability, which is needed by our customers to handle complex projects, at international level.</p>
+  			</blockquote>
+  			<p class="testimonial-author">Gilles Gaillard | <span>Managing Director</span></p>
+
+
+  			<blockquote class="testimonial">
+    			<p>We want to share our involvement in most structuring R&D projects, to enable us to carry on with this kind of collaborative work and overcome opportunistic industrial research.</p>
+  			</blockquote>
+  			<p class="testimonial-author">Benoit Maujean | <span>Head of R&D</span></p>
+
+        <a href="http://www.mikrosimage.eu">
+            <img style="border: 0; width: 100px; margin-left: auto; margin-right: auto; display: block; opacity: 0.6" src="images/mikros.png" alt="Mikros Image">
+        </a>
+  		</div>
 		</div>
-
-		<div class="rightmain">
-			<blockquote class="testimonial">
-  			<p>We’d like to sustain the efforts of standardization between studios to improve interoperability, which is needed by our customers to handle complex projects, at international level.</p>
-			</blockquote>
-			<p class="testimonial-author">Gilles Gaillard | <span>Managing Director</span></p>
-
-
-			<blockquote class="testimonial">
-  			<p>We want to share our involvement in most structuring R&D projects, to enable us to carry on with this kind of collaborative work and overcome opportunistic industrial research.</p>
-			</blockquote>
-			<p class="testimonial-author">Benoit Maujean | <span>Head of R&D</span></p>
-
-            <a href="http://www.mikrosimage.eu">
-                <img style="border: 0; width: 100px; margin-left: auto; margin-right: auto; display: block; opacity: 0.6" src="images/mikros.png" alt="Mikros Image">
-            </a>
-		</div>
-		</div>
-     <script type="text/javascript">
-            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-          </script>
-          <script type="text/javascript">
-            try {
-              var pageTracker = _gat._getTracker("UA-33856597-1");
-            pageTracker._trackPageview();
-            } catch(err) {}
-          </script>
+    <script type="text/javascript">
+      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+      try {
+        var pageTracker = _gat._getTracker("UA-33856597-1");
+        pageTracker._trackPageview();
+      } catch(err) {}
+    </script>
 	</body>
 </html>

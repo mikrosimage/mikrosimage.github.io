@@ -458,6 +458,13 @@ a[data-tooltip]:hover:before, a[data-tooltip]:hover:after {
 	text-align: center;
 }
 
+.projTitle h5 {
+    position: relative;
+    font-weight: bold;
+    color: #233138;
+    text-align: center;
+}
+
 menu
 {
 	position:relative;

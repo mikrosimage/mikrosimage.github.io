@@ -12,6 +12,8 @@
   <!-- CSS dependencies -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
   <link rel="stylesheet" href="colorful.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css">
+  <script type="text/javascript" src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js"></script>
   <!-- Script: Navbar on-top -->
   <script src="js/navbar-ontop.js"></script>
 </head>
@@ -19,7 +21,7 @@
 <body>
   <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
     <div class="container">
-      <a class="navbar-brand" href="#"><img src="assets/logos/Mikros-png blanc.png" width="100" class="d-inline-block align-top" alt=""></a>
+      <a class="navbar-brand" href="#contact"><img src="assets/logos/Mikros-png blanc.png" width="100" class="d-inline-block align-top" alt=""></a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar3SupportedContent" aria-controls="navbar3SupportedContent" aria-expanded="false" aria-label="Toggle navigation" style=""> <span class="navbar-toggler-icon"></span> </button>
       <div class="collapse navbar-collapse text-center justify-content-end" id="navbar3SupportedContent">
         <ul class="navbar-nav">
@@ -39,9 +41,9 @@
     <div class="container my-auto">
       <div class="row">
         <div class="mx-auto col-lg-6 col-md-8">
-          <h1 class="display-1 mb-0 mt-5 big-title">Open source</h1>
-          <h3 class="mb-4" contenteditable="false"><b>at Mikros Image</b></h3>
-          <p>All these projects are the result of collaborative work&nbsp;<br>with academic and industrial partners. </p>
+          <h3 class="display-3"><b>Open source</b></h3>
+          <h3 class="display-3" style=""><b>at Mikros</b></h3>
+          <p class="text-justify">The creative industry moves rapidly and the services our customers need are evolving. At Mikros, we believe that the combination of creative and technical experiences and scientific expertise through open collaboration can help our industry to solve these fundamental problems and face the future in a more sustainable way. This site presents most recent open source projects to which Mikros contributes with academic and industrial partners. </p>
         </div>
       </div>
     </div>
@@ -57,7 +59,7 @@
     <div class="container my-auto">
       <div class="row">
         <div class="col-md-8 p-3 text-white">
-          <h2 class="mb-4">Open Source</h2>
+          <h2 class="mb-4">Why Open Source</h2>
           <p class="lead text-justify" style="">Links between academia and industry is a requirement to provide cutting-edge algorithms with the robustness and the quality required all along the visual effects&nbsp; process.&nbsp;<br>We aim to provide a strong software basis with state-of-the-art algorithms that can be tested, analyzed and reused.<br>This open approach enables both us and other users to achieve a high degree of integration and easy customisation for any studio pipeline. Beyond our project objectives, open source is a way of life.&nbsp;<br>We love to exchange ideas, improve ourselves while making improvements for other people and discover new collaboration opportunities to expand everybody’s horizon.</p>
         </div>
       </div>
@@ -86,8 +88,8 @@
   <div class="py-5 text-center bg-info" id="meshroom">
     <div class="container">
       <div class="row text-center bg-info">
-        <div class="px-lg-5 mb-4 col-md-5 col-sm-5">
-          <div class="card project bg-info"><img class="img-fluid bg-info w-100 w-100 mx-auto" src="assets/logos/anim-meshroom.gif" alt="Card image">
+        <div class="px-lg-5 col-sm-5 mb-4 col-md-5">
+          <div class="card project bg-info"><img class="img-fluid bg-info mx-auto" src="assets/logos/anim-meshroom_square.gif" alt="Card image">
           </div>
         </div>
         <div class="mb-4 px-lg-5 px-4 col-md-6 col-sm-3">
@@ -114,24 +116,34 @@
   <div class="text-white bg-dark" id="contact">
     <div class="container">
       <div class="row">
-        <div class="p-5 col-md-5" style="">
+        <div class="col-md-5 text-center p-5" style="">
           <img class="img-fluid w-50 mx-auto" src="assets/logos/Mikros-png blanc.png" alt="Card image">
           <div class="row">
             <div class="col-md-12">
               <div class="card text-center">
                 <div class="card-body bg-dark text-left">
-                  <p>Mikros Image<br>8-10, rue du Renard<br>75004 Paris - France</p>
-                  <p> <a href="https://www.mikrosimage.com">www.mikrosimage.com</a> <br>
+                  <p class="text-center">Mikros Image<br>8-10, rue du Renard<br>75004 Paris - France</p>
+                  <p class="text-center"> <a href="https://www.mikrosimage.com">www.mikrosimage.com</a> <br>
                     <a href="mailto:opensource@mikrosimage.eu">get in touch</a></p>
-                  <br>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="p-5 col-md-6">
+        <div class="p-4 col-md-6">
           <div class="row">
-            <div class="col-md-12"><img class="img-fluid d-block w-80 mx-auto" src="assets/backgrounds/map mikros.png"></div>
+            <div class="col-md-12">
+              <div id="mapid" style="height: 400px;" class=""></div>
+              <script style="">
+                var mymap = L.map('mapid').setView([48.85856, 2.35275], 15);
+                L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+                  maxZoom: 18,
+                  attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' + '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' + 'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+                  id: 'mapbox.streets'
+                }).addTo(mymap);
+                L.marker([48.85856, 2.35275]).addTo(mymap).bindPopup("<b>Mikros Image</b>").openPopup();
+              </script>
+            </div>
           </div>
         </div>
       </div>
